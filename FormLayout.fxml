@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jse.metaco.project.FormLayoutController">
+   <children>
+      <Label layoutX="79.0" layoutY="36.0" prefHeight="38.0" prefWidth="47.0" text="Dataset:" />
+      <TextField fx:id="tfDataset" layoutX="131.0" layoutY="30.0" prefHeight="38.0" prefWidth="323.0"/>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="89.0" prefHeight="38.0" prefWidth="202.0" text="The Book Name With:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="67.0" layoutY="137.0" prefHeight="17.0" prefWidth="129.0" text="Best Rank:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="78.0" layoutY="170.0" prefHeight="17.0" prefWidth="109.0" text="Worth Rank:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="72.0" layoutY="200.0" prefHeight="17.0" prefWidth="120.0" text="Most Raters:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="233.0" prefHeight="20.0" prefWidth="202.0" text="The Author of the Best Book:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="bChooseFile" layoutX="467.0" layoutY="30.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="38.0" prefWidth="109.0" text="Choose File" />
+      <Button fx:id="bJson" layoutX="123.0" layoutY="283.0" mnemonicParsing="false" onAction="#convertJSON" prefHeight="45.0" prefWidth="339.0" text="Export as JSON File" />
+      <Button fx:id="bDatabase" layoutX="123.0" layoutY="334.0" mnemonicParsing="false" onAction="#convertDB" prefHeight="45.0" prefWidth="339.0" text="Export as Database Table" />
+      <Label fx:id="lmaxRate" layoutX="173.0" layoutY="135.0" prefHeight="21.0" prefWidth="422.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="lminRate" layoutX="173.0" layoutY="170.0" prefHeight="21.0" prefWidth="422.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="lmaxRateCount" layoutX="173.0" layoutY="200.0" prefHeight="21.0" prefWidth="422.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="lauthor" layoutX="207.0" layoutY="233.0" prefHeight="21.0" prefWidth="409.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
